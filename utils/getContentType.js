@@ -1,0 +1,37 @@
+export function getContentType(ext){
+    const types={
+        ".html": "text/html",
+        ".htm": "text/html",
+        ".css": "text/css",
+        ".js": "application/javascript",
+        ".mjs": "application/javascript",
+        ".cjs": "application/javascript",
+        ".json": "application/json",
+        ".ts": "application/typescript",
+        ".tsx": "application/typescript",
+        ".jsx": "text/jsx",
+        ".env": "text/plain",
+        ".yml": "application/x-yaml",
+        ".yaml": "application/x-yaml",
+        ".graphql": "application/graphql",
+        ".txt": "text/plain",
+        ".xml": "application/xml",
+        ".csv": "text/csv",
+        ".svg": "image/svg+xml",
+        ".png": "image/png",
+        ".jpg": "image/jpeg",
+        ".jpeg": "image/jpeg",
+        ".gif": "image/gif",
+        ".ico": "image/x-icon",
+        ".ejs": "text/html",
+        ".hbs": "text/html",
+        ".pdf": "application/pdf",
+        ".mp3": "audio/mpeg",
+        ".mp4": "video/mp4",
+        ".woff": "font/woff",
+        ".woff2": "font/woff2",
+        ".ttf": "font/ttf",
+        ".otf": "font/otf"
+      }
+    return types[ext.toLowerCase()] || "text/html";
+}
